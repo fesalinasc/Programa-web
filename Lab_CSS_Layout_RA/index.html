@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Torrefação Grão Serra | Painel de controle</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <img src="img/Torrefação Grão Serra.png" alt="Logo da Torrefação Grão Serra">
+
+        </div>
+
+        <nav class="menu" aria-label="Menu principal">
+
+            <a href="#">Início</a>
+
+            <a href="#Lotes">Lotes</a>
+
+            <a href="#pedidos">Pedidos</a>
+
+            <a href="#unidade">Unidade</a>
+
+        </nav>
+
+    </header>
+
+    <h2 class="titulo-secao" id="Lotes">
+        Cafés da semana
+    </h2>
+
+    <section class="cards-flex">
+
+        <article class="card-flex">
+
+            <div>
+
+                <h3>
+                    Mantiqueira de Minas -
+                    <a href="pontuacao86.html" target="_blank">
+                        86 pontos
+                    </a>
+                </h3>
+
+                <img src="img/Café Catuí Amarelo Chocolate e Caramelo.png" alt="Mantiqueira de Minas">
+
+                <p>
+                    Catuí Amarelo, natural.
+                    Notas de chocolate e caramelo.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card-flex">
+
+            <div>
+
+                <h3>
+                    Alta Mogiana -
+                    <a href="pontuacao84.html" target="_blank">
+                        84 pontos
+                    </a>
+                </h3>
+
+                <img src="img/Mundo Novo, cereja descascado. Notas de castanhas..png" alt="Alta Mogiana">
+
+                <p>
+                    Mundo Novo, cereja descascado.
+                    Notas de castanhas.
+                </p>
+
+            </div>
+
+        </article>
+
+        <article class="card-flex">
+
+            <div>
+
+                <h3>
+                    Chapada Diamantina -
+                    <a href="pontuacao88.html" target="_blank">
+                        88 pontos
+                    </a>
+                </h3>
+
+                <img src="img/Catucaí, fermentado. Notas de frutas vermelhas.png" alt="Chapada Diamantina">
+
+            </div>
+
+        </article>
+
+        <article class="card-flex">
+
+            <div>
+
+                <h3>
+                    Cerrado Mineiro -
+                    <a href="pontuacao85.html" target="_blank">
+                        85 pontos
+                    </a>
+                </h3>
+
+                <img src="img/Bourbon Amarelo, natural. Notas de mel e laranja.png" alt="Cerrado Mineiro">
+
+            </div>
+
+        </article>
+
+    </section>
+
+     <main class="dashboard">
+
+        <aside class="sidebar">
+
+            <h2>Menu</h2>
+
+            <ul>
+                <li><a href="#">Visão geral</a></li>
+                <li><a href="#cafes">Cafés</a></li>
+                <li><a href="#fotos">Fotos da torra</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+                <li><a href="#unidade">Unidade</a></li>
+            </ul>
+
+        </aside>
+
+        <section class="content">
+
+            <h1>Painel da torrefação</h1>
+
+            <p>Resumo da semana de 7 a 11 de setembro.</p>
+
+            <section class="kpis">
+
+                <article class="kpi">
+                    <h2>Café torrado</h2>
+                    <p class="kpi-valor">312 kg</p>
+                </article>
+
+                <article class="kpi">
+                    <h2>Pedidos</h2>
+                    <p class="kpi-valor">47</p>
+                </article>
+
+                <article class="kpi">
+                    <h2>Faturamento</h2>
+                    <p class="kpi-valor">R$ 28.640</p>
+                </article>
+
+            </section>
+
+            <h2 id="fotos">Fotos da torra</h2>
+
+            <section class="galeria">
+
+                <div class="foto">
+                    Grãos de café crus antes da torra
+                    <img src="img/Grãos de café crus antes da torra.png" alt="Grãos de café crus antes da torra">
+
+                </div>
+
+                <div class="foto">
+
+                Torrador
+                    <img src="img/Torrador.png" alt="Torrador em funcionamento">
+
+                </div>
+
+                <div class="foto">
+                    Prova de xícara
+                    <img src="img/Prova de xícara para avaliar o café.png" alt="Prova de xícara para avaliar o café">
+                </div>
+
+                <div class="foto">
+                    Pacotes de café embalados
+                    <img src="img/Pacotes de café embalados.png" alt="Pacotes de café embalados">
+
+                </div>
+
+            </section>
+
+        </section>
+    </main>
+
+    <h2 class="titulo-secao" id="pedidos">Pedidos da semana</h2>
+
+    <form class="form-flex">
+
+        <input type="text" placeholder="Filtrar por cliente" aria-label="Filtrar por cliente">
+
+        <input type="text" placeholder="Filtrar por café" aria-label="Filtrar por café">
+
+        <button type="button">Filtrar</button>
+
+    </form>
+
+    <div class="tabela-wrap" tabindex="0" role="region" aria-label="Tabela de pedidos">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Cliente</th>
+
+                    <th>Café</th>
+
+                    <th>Quantidade</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>1001</td>
+
+                    <td>Padaria Estrela</td>
+
+                    <td>Alta Mogiana</td>
+
+                    <td>10 kg</td>
+
+                    <td>Entregue</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>1002</td>
+
+                    <td>Café do Largo</td>
+
+                    <td>Mantiqueira de Minas</td>
+
+                    <td>5 kg</td>
+
+                    <td>Em torra</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>1003</td>
+
+                    <td>Hotel Serra Azul</td>
+
+                    <td>Chapada Diamantina</td>
+
+                    <td>3 kg</td>
+
+                    <td>Pendente</td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <section class="espaco">
+
+        <h2 class="titulo-secao">Espaço da torrefação</h2>
+
+        <img
+            class="imagem-destaque"
+            src="img/Espaço da torrefação Grão da Serra.png"
+            alt="Espaço da torrefação Grão da Serra"
+        >
+
+        <section class="ficha" id="unidade">
+
+            <h3>Unidade de torra</h3>
+
+            <dl>
+
+                <dt>Torrador</dt>
+                <dd>Probat 30 kg por batelada</dd>
+
+                <dt>Responsável pela torra</dt>
+                <dd>Marina Lopes</dd>
+
+                <dt>Horário de produção</dt>
+                <dd>Segunda a sexta, das 6h às 15h</dd>
+
+                <dt>Última manutenção</dt>
+                <dd>28/08/2026</dd>
+
+            </dl>
+
+        </section>
+
+    </section>
+
+    <footer class="footer">
+
+        <p>&copy; 2026 Grão da Serra Torrefação de Cafés Especiais Ltda. Todos os direitos reservados.</p>
+
+        <p class="footer-legal">
+            Painel de uso interno. CNPJ 00.000.000/0001-00.
+            Laboratório de Layout CSS, Programação Web.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
