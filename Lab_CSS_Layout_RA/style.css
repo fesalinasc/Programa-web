@@ -461,4 +461,4 @@ tbody tr:hover {
 :focus {
     outline: 3px solid var(--cor-destaque);
     outline-offset: 2px;
-}
+}   

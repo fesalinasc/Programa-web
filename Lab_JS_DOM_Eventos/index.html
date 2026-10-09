@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab JS — DOM e Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Laboratório — JavaScript DOM e Eventos</h1>
+        <p>Programação Web · PUC-Campinas</p>
+    </header>
+
+    <main>
+        <!-- Etapa 1: evento input (espelho + contador) -->
+        <section class="etapa">
+            <h2>Etapa 1 — Campo com contador de caracteres</h2>
+
+            <label for="nome1">Nome:</label>
+            <input id="nome1" type="text" autocomplete="off">
+            <p id="contador1" class="contador">0/50</p>
+            <p id="espelho1" class="espelho">Você digitou: </p>
+        </section>
+
+        <!-- Etapa 2: evento change (select dependente) -->
+        <section class="etapa">
+            <h2>Etapa 2 — Select dependente (Estado → Cidade)</h2>
+
+            <label for="estado">Estado:</label>
+            <select id="estado">
+                <option value="">Selecione um estado</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+
+            <label for="cidade">Cidade:</label>
+            <select id="cidade" disabled>
+                <option value="">Escolha o estado primeiro</option>
+            </select>
+        </section>
+
+        <!-- Etapa 3: eventos focus e blur -->
+        <section class="etapa">
+            <h2>Etapa 3 — Campo com focus e blur</h2>
+
+            <label for="email3">E-mail:</label>
+            <input id="email3" type="email" autocomplete="off">
+            <p id="msg-email3" class="mensagem" aria-live="polite"></p>
+        </section>
+
+        <!-- Etapa 4: formulário validado no submit -->
+        <section class="etapa">
+            <h2>Etapa 4 — Formulário validado com submit</h2>
+
+            <form id="form4" novalidate>
+                <label for="nome4">Nome:</label>
+                <input id="nome4" type="text">
+                <p id="erro-nome4" class="mensagem"></p>
+
+                <label for="email4">E-mail:</label>
+                <input id="email4" type="email">
+                <p id="erro-email4" class="mensagem"></p>
+
+                <label for="curso4">Curso:</label>
+                <select id="curso4">
+                    <option value="">Selecione um curso</option>
+                    <option value="cc">Ciência da Computação</option>
+                    <option value="es">Engenharia de Software</option>
+                    <option value="si">Sistemas de Informação</option>
+                </select>
+                <p id="erro-curso4" class="mensagem"></p>
+
+                <label class="check">
+                    <input id="termos4" type="checkbox"> Aceito os termos
+                </label>
+                <p id="erro-termos4" class="mensagem"></p>
+
+                <button id="enviar4" type="submit" disabled aria-describedby="aviso-termos4">Enviar</button>
+                <p id="aviso-termos4" class="mensagem info-texto">Aceite os termos para habilitar o botão Enviar.</p>
+            </form>
+            <p id="resultado4" class="mensagem" aria-live="polite"></p>
+        </section>
+
+        <!-- Etapa 5: desafio final (formulário inteligente) -->
+        <section class="etapa">
+            <h2>Etapa 5 — Desafio final: formulário inteligente</h2>
+
+            <!-- Sumário de erros: lido por leitores de tela quando muda -->
+            <div id="sumario" class="sumario" role="alert" aria-live="assertive" hidden>
+                <strong>Corrija os seguintes campos:</strong>
+                <ul id="lista-erros"></ul>
+            </div>
+
+            <form id="form5" novalidate>
+                <label for="nome5">Nome:</label>
+                <input id="nome5" name="nome" type="text">
+
+                <label for="email5">E-mail:</label>
+                <input id="email5" name="email" type="email">
+
+                <label for="senha5">Senha:</label>
+                <input id="senha5" name="senha" type="password">
+                <div class="barra-forca"><div id="barra"></div></div>
+                <p id="texto-forca" class="mensagem">Força da senha: —</p>
+
+                <label for="curso5">Curso:</label>
+                <select id="curso5" name="curso">
+                    <option value="">Selecione um curso</option>
+                    <option value="cc">Ciência da Computação</option>
+                    <option value="es">Engenharia de Software</option>
+                    <option value="si">Sistemas de Informação</option>
+                </select>
+
+                <label class="check">
+                    <input id="termos5" name="termos" type="checkbox"> Aceito os termos
+                </label>
+
+                <button id="enviar5" type="submit" disabled aria-describedby="aviso-termos5">Enviar</button>
+                <p id="aviso-termos5" class="mensagem info-texto">Aceite os termos para habilitar o botão Enviar.</p>
+            </form>
+            <p id="resultado5" class="mensagem" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
